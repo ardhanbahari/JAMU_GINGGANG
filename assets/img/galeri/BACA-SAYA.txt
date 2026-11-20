@@ -1,0 +1,8 @@
+Letakkan foto di folder ini dengan nama persis berikut (JPG):
+toko-depan.jpg        -> tampak depan toko jamu
+proses.jpg            -> proses pembuatan
+dalam-toko.jpg        -> suasana dalam toko
+produk.jpg            -> produk
+toko-samping.jpg      -> foto toko (lebar)
+sertifikat-unesco.jpg -> sertifikat UNESCO
+Selama foto belum ada, situs menampilkan placeholder bermotif kawung.

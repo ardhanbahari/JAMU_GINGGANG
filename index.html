@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jamu Ginggang — Warisan Jamu Pakualaman Yogyakarta Sejak 1925</title>
+  <meta name="description" content="Jamu Ginggang, jamu tradisional legendaris dari Pakualaman, Yogyakarta. Resep leluhur tabib Sri Paduka Pakualam VII, diwariskan lima generasi sejak 1925.">
+  <meta name="keywords" content="Jamu Ginggang, jamu Yogyakarta, jamu tradisional, Pakualaman, kunir asam, beras kencur, jamu godog">
+  <meta property="og:title" content="Jamu Ginggang — Warisan Jamu Pakualaman">
+  <meta property="og:description" content="Resep tabib Pakualam VII, diwariskan lima generasi sejak 1925.">
+  <meta name="theme-color" content="#4a2c17">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Javanese:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============ SVG SYMBOLS ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 64 64">
+      <rect x="4" y="4" width="56" height="56" rx="16" fill="#c8963e"/>
+      <g fill="none" stroke="#4a2c17" stroke-width="2.2">
+        <ellipse cx="32" cy="19" rx="6.5" ry="12"/><ellipse cx="32" cy="45" rx="6.5" ry="12"/>
+        <ellipse cx="19" cy="32" rx="12" ry="6.5"/><ellipse cx="45" cy="32" rx="12" ry="6.5"/>
+      </g>
+      <circle cx="32" cy="32" r="3.4" fill="#4a2c17"/>
+    </symbol>
+
+    <!-- sachet / bungkus jamu -->
+    <symbol id="ic-pouch" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 12h48l4 10-4 60a6 6 0 0 1-6 6H30a6 6 0 0 1-6-6L20 22z" fill="currentColor" fill-opacity=".07"/>
+<path d="M20 22h56M24 12h48" stroke-dasharray="2.5 3"/>
+<path d="M30 34h36M34 40h28" opacity=".7"/>
+<g transform="translate(48 62)"><ellipse cx="0" cy="-11" rx="4" ry="9"/><ellipse cx="0" cy="11" rx="4" ry="9"/><ellipse cx="-11" cy="0" rx="9" ry="4"/><ellipse cx="11" cy="0" rx="9" ry="4"/><circle r="1.6" fill="currentColor"/></g>
+<path d="M28 80h40" opacity=".6"/></symbol>
+
+    <!-- gelas jamu -->
+    <symbol id="ic-cup" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M22 34h52c0 22-8 38-26 38S22 56 22 34z" fill="currentColor" fill-opacity=".07"/>
+<path d="M24 46c8 5 14-4 24 0s16 4 24 0" opacity=".9"/>
+<path d="M74 40c14 0 14 20 0 22"/>
+<path d="M36 72l-4 8h32l-4-8M28 80h40"/>
+<path d="M38 24c-5 5 5 7 0 12M48 20c-5 5 5 7 0 12M58 24c-5 5 5 7 0 12" opacity=".75"/></symbol>
+
+    <!-- kendil / ceret godog -->
+    <symbol id="ic-pot" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M30 42c0-10 8-16 18-16s18 6 18 16v24c0 9-7 14-18 14S30 75 30 66z" fill="currentColor" fill-opacity=".07"/>
+<path d="M66 46c9-1 16-6 20-14l2 1M30 52c-8 0-10 9-3 12"/>
+<path d="M38 26c0-5 5-8 10-8s10 3 10 8M44 18c0-3 2-4 4-4s4 1 4 4"/>
+<path d="M32 56h32M32 66h32" opacity=".55" stroke-dasharray="1.5 4"/>
+<path d="M42 8c-4 4 4 5 0 9M54 8c-4 4 4 5 0 9" opacity=".7"/></symbol>
+
+    <!-- bubuk / serbuk -->
+    <symbol id="ic-jar" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="26" y="14" width="44" height="12" rx="3"/>
+<path d="M30 26h36v52a8 8 0 0 1-8 8H38a8 8 0 0 1-8-8z" fill="currentColor" fill-opacity=".07"/>
+<path d="M30 54c8-5 12 5 18 0s12-4 18 0" opacity=".9"/>
+<rect x="38" y="34" width="20" height="12" rx="1" opacity=".7"/>
+<path d="M33 72h30" opacity=".5"/></symbol>
+
+    <!-- rempah -->
+    <symbol id="sp-kunyit" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 42c0-9 7-15 17-16l18-8c7-3 12 2 10 9l-5 18c-3 10-12 14-24 12C13 56 8 50 8 42z" fill="currentColor" fill-opacity=".08"/>
+<path d="M19 30c-3 9-1 17 5 23M28 26c-3 10-1 20 5 27M37 22c-3 10 0 20 6 26M45 20c-1 8 1 14 4 18" opacity=".75"/>
+<path d="M46 18c4-8 10-8 12-6" /><path d="M52 12c-2-6 3-10 10-9 1 7-3 11-10 9z"/><path d="M53 11l6-5" opacity=".7"/></symbol>
+    <symbol id="sp-jahe" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 40c-2-6 4-10 9-9 0-8 9-10 13-6 3-8 14-7 15 1 7-3 14 3 12 9 6 3 6 11-1 13-2 7-10 7-14 3-6 6-15 4-18-2-8 2-14-2-16-9z" fill="currentColor" fill-opacity=".08"/>
+<path d="M14 38h9M30 33h9M40 42h9M22 46h8" opacity=".65"/>
+<circle cx="46" cy="30" r="1.6" fill="currentColor"/><circle cx="17" cy="34" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="sp-kencur" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="20" cy="42" rx="8" ry="14" transform="rotate(-20 20 42)" fill="currentColor" fill-opacity=".08"/>
+<ellipse cx="42" cy="44" rx="7" ry="12" transform="rotate(18 42 44)" fill="currentColor" fill-opacity=".08"/>
+<ellipse cx="31" cy="36" rx="7" ry="13" fill="currentColor" fill-opacity=".08"/>
+<path d="M15 36l9 4M16 46l9 3M26 28h10M26 38h10M37 40l8 3M38 50l7 2" opacity=".6"/>
+<path d="M31 23c-9-1-16-8-12-15 8-3 15 4 12 15z"/><path d="M31 23c-2-6-5-10-9-13" opacity=".7"/></symbol>
+    <symbol id="sp-temulawak" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 38c0-11 9-17 19-17l22-7c8-2 13 4 11 12l-6 22c-4 12-17 17-30 13C12 57 6 50 6 38z" fill="currentColor" fill-opacity=".08"/>
+<path d="M16 28c-2 9 0 18 5 25M25 24c-3 11 0 21 6 28M35 21c-3 11 0 21 7 26M45 18c-2 8 0 14 4 18" opacity=".75"/>
+<path d="M12 44h8M24 48h8M36 44h8" opacity=".45"/></symbol>
+    <symbol id="sp-asam" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 50C13 28 32 13 57 11c3 0 3 5 0 6C39 20 28 30 22 50c-2 7-13 7-15 0z" fill="currentColor" fill-opacity=".08"/>
+<path d="M14 40l8 4M19 31l8 5M27 24l7 6M36 18l5 6M46 14l3 6" opacity=".75"/>
+<path d="M12 50c3-12 9-20 16-25" opacity=".4" stroke-dasharray="1.5 3.5"/>
+<path d="M57 11c3-4 5-5 7-5"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="brand" aria-label="Jamu Ginggang">
+      <svg class="brand-mark"><use href="#mark"/></svg>
+      <span class="brand-text">Jamu Ginggang<small>Pakualaman · Yogyakarta</small></span>
+    </div>
+    <nav id="nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#beranda" class="active">Beranda</a></li>
+        <li><a href="#filosofi">Filosofi</a></li>
+        <li><a href="#sejarah">Sejarah</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#penghargaan">Penghargaan</a></li>
+        <li><a href="#kunjungi">Kunjungi</a></li>
+      </ul>
+    </nav>
+    <a class="btn-jg btn-emas header-cta" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20saya%20ingin%20memesan%20jamu." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Pesan</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section id="beranda" class="hero">
+  <div class="hero-frame" aria-hidden="true"></div>
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-up">
+        <span class="eyebrow">Sejak 1925 · Pakualaman</span>
+        <div class="jawa jawa-title" aria-hidden="true">ꦗꦩꦸꦒꦶꦁꦒꦁ</div>
+        <h1>Jamu Ginggang, <em>warisan tabib Pakualaman</em></h1>
+        <p class="lead">Resep leluhur yang diterima langsung dari Sri Paduka Pakualam VII, diracik dengan telaten dan diwariskan lima generasi — dari Pasar Beringharjo hingga ke meja Anda.</p>
+        <div class="hero-actions">
+          <a href="#produk" class="btn-jg btn-emas">Lihat Produk <i class="bi bi-arrow-right"></i></a>
+          <a href="#sejarah" class="btn-jg btn-garis">Kisah Kami</a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="150">
+        <div class="hero-art">
+          <svg viewBox="0 0 520 520" role="img" aria-label="Medali ornamen kawung dengan cawan jamu">
+            <defs>
+              <radialGradient id="disk" cx="50%" cy="42%" r="65%"><stop offset="0" stop-color="#34200f"/><stop offset="1" stop-color="#0e0804"/></radialGradient>
+              <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f3dfa6"/><stop offset=".5" stop-color="#c19a49"/><stop offset="1" stop-color="#8f6a22"/></linearGradient>
+              <linearGradient id="liq" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#d9a547" stop-opacity=".95"/><stop offset="1" stop-color="#7a4a14" stop-opacity=".9"/></linearGradient>
+              <pattern id="kw" width="40" height="40" patternUnits="userSpaceOnUse"><g fill="none" stroke="#e9ca83" stroke-width=".8" opacity=".16"><ellipse cx="20" cy="10" rx="5" ry="9"/><ellipse cx="20" cy="30" rx="5" ry="9"/><ellipse cx="10" cy="20" rx="9" ry="5"/><ellipse cx="30" cy="20" rx="9" ry="5"/></g></pattern>
+              <clipPath id="cl"><circle cx="260" cy="260" r="204"/></clipPath>
+            </defs>
+            <g class="spin-slow" fill="none" stroke="url(#gold)" stroke-width="1">
+              <circle cx="260" cy="260" r="254" stroke-dasharray="1.5 7"/>
+              <circle cx="260" cy="260" r="236" stroke-width="6" stroke-dasharray="1 12.4" opacity=".75"/>
+            </g>
+            <circle cx="260" cy="260" r="222" fill="none" stroke="url(#gold)" stroke-width="1" opacity=".7"/>
+            <circle cx="260" cy="260" r="205" fill="url(#disk)" stroke="url(#gold)" stroke-width="2.5"/>
+            <circle cx="260" cy="260" r="205" fill="url(#kw)" clip-path="url(#cl)"/>
+            <circle cx="260" cy="260" r="194" fill="none" stroke="#e9ca83" stroke-opacity=".45" stroke-width=".8"/>
+            <circle cx="260" cy="260" r="186" fill="none" stroke="#e9ca83" stroke-opacity=".25" stroke-width=".8" stroke-dasharray="2 6"/>
+
+            <!-- cabang daun -->
+            <g fill="none" stroke="#e9ca83" stroke-width="1.2" stroke-linecap="round" opacity=".85">
+              <path d="M150 380c-18-40-18-84 6-124"/>
+              <path d="M156 256c-14-6-20-18-18-32 14 2 22 14 18 32zM150 296c-16-2-26-12-26-26 15-1 25 8 26 26zM148 336c-14 0-24-9-26-22 14-2 24 6 26 22zM156 256c8-12 22-16 34-12-4 14-16 20-34 12zM152 300c10-10 24-12 34-6-6 12-18 16-34 6z"/>
+              <path d="M370 380c18-40 18-84-6-124"/>
+              <path d="M364 256c14-6 20-18 18-32-14 2-22 14-18 32zM370 296c16-2 26-12 26-26-15-1-25 8-26 26zM372 336c14 0 24-9 26-22-14-2-24 6-26 22zM364 256c-8-12-22-16-34-12 4 14 16 20 34 12zM368 300c-10-10-24-12-34-6 6 12 18 16 34 6z"/>
+            </g>
+
+            <!-- cawan jamu -->
+            <g stroke-linecap="round" stroke-linejoin="round">
+              <path d="M180 218h160c0 70-26 120-80 120s-80-50-80-120z" fill="url(#liq)" fill-opacity=".18" stroke="url(#gold)" stroke-width="3"/>
+              <path d="M186 258c26 14 44-12 74 0s50 14 74 0c-4 56-28 82-74 82s-70-26-74-82z" fill="url(#liq)"/>
+              <path d="M186 258c26 14 44-12 74 0s50 14 74 0" fill="none" stroke="#f3dfa6" stroke-width="2"/>
+              <path d="M340 236c36 0 36 58-2 60" fill="none" stroke="url(#gold)" stroke-width="3"/>
+              <path d="M226 338l-10 22h88l-10-22M200 360h120" fill="none" stroke="url(#gold)" stroke-width="2.4"/>
+              <path d="M214 232c-2 30 2 60 14 84" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="3"/>
+              <g fill="none" stroke="#f3dfa6" stroke-width="1.6" opacity=".7">
+                <path class="steam" d="M232 190c-12 14 12 18 0 34"/>
+                <path class="steam s2" d="M262 176c-12 14 12 18 0 34"/>
+                <path class="steam s3" d="M292 190c-12 14 12 18 0 34"/>
+              </g>
+            </g>
+            <text x="260" y="112" text-anchor="middle" class="jawa" font-size="34" fill="url(#gold)">ꦗꦩꦸꦒꦶꦁꦒꦁ</text>
+            <text x="260" y="420" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="11" letter-spacing="7" fill="#e9ca83" opacity=".85">SEJAK 1925</text>
+            <g fill="#e9ca83"><path d="M260 432l4 5-4 5-4-5z"/><path d="M236 437l3 3.5-3 3.5-3-3.5z" opacity=".6"/><path d="M284 437l3 3.5-3 3.5-3-3.5z" opacity=".6"/></g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-facts">
+    <div class="container"><div class="row g-0">
+      <div class="col-3"><div class="fact"><b>1925</b><span>Berdiri</span></div></div>
+      <div class="col-3"><div class="fact"><b>5</b><span>Generasi</span></div></div>
+      <div class="col-3"><div class="fact"><b>1950</b><span>Menetap di Jl. Masjid</span></div></div>
+      <div class="col-3"><div class="fact"><b>PA VII</b><span>Sumber Resep</span></div></div>
+    </div></div>
+  </div>
+</section>
+<div class="batik-band" aria-hidden="true"></div>
+
+<!-- ============ FILOSOFI ============ -->
+<section id="filosofi" class="sec filosofi">
+  <div class="container">
+    <div class="sec-head" data-aos="fade-up">
+      <span class="kicker">Filosofi</span>
+      <span class="jawa" aria-hidden="true">ꦗꦩꦸꦒꦶꦁꦒꦁ</span>
+      <h2>Tan Genggang, Hubungan yang Abadi</h2>
+      <div class="orn"><i class="bi bi-diamond-fill"></i></div>
+    </div>
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="frame">
+          <div class="quote-mark">“</div>
+          <blockquote>Tan Genggang — <em>tansah genggang</em>: hubungan yang tak pernah putus antara leluhur, peracik, dan mereka yang meminumnya.</blockquote>
+          <cite>— JULUKAN MBAH JAYA, TABIB PAKUALAMAN</cite>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="value-list">
+          <div class="value"><div class="ico"><i class="bi bi-award"></i></div><div><h3>Resep Keraton</h3><p>Berasal dari Mbah Jaya, tabib di lingkungan Pakualaman, yang menerima resepnya langsung dari Sri Paduka Pakualam VII.</p></div></div>
+          <div class="value"><div class="ico"><i class="bi bi-people"></i></div><div><h3>Warisan Keluarga</h3><p>Dijaga turun-temurun selama lima generasi. Kini dikelola Rudi Supriyadi, generasi kelima, yang masih menyimpan catatan resep simbahnya.</p></div></div>
+          <div class="value"><div class="ico"><i class="bi bi-cash-coin"></i></div><div><h3>Berkhasiat, Murah, Enak</h3><p>Reputasi yang membuat Jamu Ginggang terkenal sejak Mbah Kasidah berjualan keliling di Pasar Beringharjo.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEJARAH ============ -->
+<section id="sejarah" class="sec dark-sec">
+  <div class="container">
+    <div class="sec-head" data-aos="fade-up">
+      <span class="kicker">Sejarah</span>
+            <h2>Hampir Seabad Meracik Jamu</h2>
+      <p>Dari pendopo Pakualaman hingga lapak Beringharjo, inilah perjalanan resep yang menjaga kesehatan warga Yogyakarta.</p>
+      <div class="orn"><i class="bi bi-diamond-fill"></i></div>
+    </div>
+    <div class="timeline">
+      <div class="t-item" data-aos="fade-up"><div class="t-dot"><i class="bi bi-flower1"></i></div>
+        <div class="t-card"><span class="t-gen">Generasi I</span><div class="t-year">1925</div><h3>Mbah Jaya</h3><p>Tabib Pakualaman yang mendapat mandat dari Sri Paduka Pakualam VII. Resep diterima langsung dari beliau dan usaha jamu dimulai.</p></div></div>
+      <div class="t-item" data-aos="fade-up"><div class="t-dot"><i class="bi bi-droplet-half"></i></div>
+        <div class="t-card"><span class="t-gen">Generasi II</span><div class="t-year">Mbah Bilowo</div><h3>Adik yang Meneruskan</h3><p>Setelah Mbah Jaya wafat, usaha dilanjutkan sang adik, Mbah Bilowo, yang juga tabib Pakualam VII.</p></div></div>
+      <div class="t-item" data-aos="fade-up"><div class="t-dot"><i class="bi bi-house-heart"></i></div>
+        <div class="t-card"><span class="t-gen">Menetap</span><div class="t-year">1950</div><h3>Rumah di Jalan Masjid</h3><p>Jamu Ginggang menetap di Jalan Masjid, Pakualaman — lokasi yang hingga kini menjadi tempat racikan dan penjualan.</p></div></div>
+      <div class="t-item" data-aos="fade-up"><div class="t-dot"><i class="bi bi-shop"></i></div>
+        <div class="t-card"><span class="t-gen">Generasi III</span><div class="t-year">±1970</div><h3>Mbah Kasidah di Beringharjo</h3><p>Berjualan keliling di Pasar Beringharjo, beliau mengangkat nama Jamu Ginggang: berkhasiat, murah, dan enak.</p></div></div>
+      <div class="t-item" data-aos="fade-up"><div class="t-dot"><i class="bi bi-arrow-repeat"></i></div>
+        <div class="t-card"><span class="t-gen">Generasi IV</span><div class="t-year">Estafet</div><h3>Tradisi Terus Berlanjut</h3><p>Setelah Mbah Bilowo wafat, usaha diteruskan ke generasi keempat dengan resep yang tetap dijaga.</p></div></div>
+      <div class="t-item" data-aos="fade-up"><div class="t-dot"><i class="bi bi-stars"></i></div>
+        <div class="t-card"><span class="t-gen">Generasi V</span><div class="t-year">Kini</div><h3>Rudi Supriyadi</h3><p>Pengelola Jamu Ginggang saat ini. Masih menyimpan catatan resep milik simbahnya dan menjaga cara meracik yang tradisional.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUK ============ -->
+<section id="produk" class="sec produk">
+  <div class="container">
+    <div class="sec-head" data-aos="fade-up">
+      <span class="kicker">Produk</span>
+            <h2>Racikan Jamu Pilihan</h2>
+      <p>Setiap kemasan berisi 100 gram netto. Pesan lewat WhatsApp, kami siapkan dengan segar.</p>
+      <div class="orn"><i class="bi bi-diamond-fill"></i></div>
+    </div>
+
+    <div class="menu-note" data-aos="fade-up"><i class="bi bi-cup-hot"></i><p><b>Di toko, tersedia sekitar 45 menu</b> — jamu biasa, minuman dingin, dan jamu telur. Anda juga bisa menceritakan keluhan, dan ramuan akan dibuatkan khusus.</p></div>
+
+    <div class="chips" role="tablist" aria-label="Filter produk">
+      <button class="chip active" data-filter="all">Semua</button>
+      <button class="chip" data-filter="racikan">Racikan Jamu</button>
+      <button class="chip" data-filter="serbuk">Serbuk P-IRT</button>
+    </div>
+
+    <div class="row g-4 justify-content-center" id="produkGrid">
+      <!-- racikan -->
+      <div class="col-sm-6 col-lg-4 p-item" data-cat="racikan" data-aos="fade-up">
+        <article class="p-card"><div class="p-top" style="--c1:#2f4b2c"><span class="p-tag">Racikan</span><svg><use href="#ic-pouch"/></svg></div>
+          <div class="p-body"><h3>Jamu Ginggang Sawan Tahun</h3><p>Racikan khas Ginggang dalam kemasan 100 gram netto.</p>
+            <div class="p-meta"><div class="price"><small>100 gram</small>Rp15.000</div><a class="p-order" aria-label="Pesan Jamu Ginggang Sawan Tahun" target="_blank" rel="noopener" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20saya%20ingin%20memesan%20Jamu%20Ginggang%20Sawan%20Tahun."><i class="bi bi-whatsapp"></i></a></div></div></article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-item" data-cat="racikan" data-aos="fade-up" data-aos-delay="80">
+        <article class="p-card"><div class="p-top" style="--c1:#6b4226"><span class="p-tag">Racikan</span><svg><use href="#ic-pot"/></svg></div>
+          <div class="p-body"><h3>Jamu Godog</h3><p>Jamu rebusan tradisional, siap diseduh sebagai ramuan hangat.</p>
+            <div class="p-meta"><div class="price"><small>100 gram</small>Rp15.000</div><a class="p-order" aria-label="Pesan Jamu Godog" target="_blank" rel="noopener" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20saya%20ingin%20memesan%20Jamu%20Godog."><i class="bi bi-whatsapp"></i></a></div></div></article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-item" data-cat="racikan" data-aos="fade-up" data-aos-delay="160">
+        <article class="p-card"><div class="p-top" style="--c1:#8a3a22"><span class="p-tag">Racikan</span><svg><use href="#ic-cup"/></svg></div>
+          <div class="p-body"><h3>Jamu Ginggang Beras Kencur</h3><p>Racikan beras kencur yang menyegarkan, favorit sepanjang masa.</p>
+            <div class="p-meta"><div class="price"><small>100 gram</small>Rp30.000</div><a class="p-order" aria-label="Pesan Jamu Ginggang Beras Kencur" target="_blank" rel="noopener" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20saya%20ingin%20memesan%20Jamu%20Ginggang%20Beras%20Kencur."><i class="bi bi-whatsapp"></i></a></div></div></article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-item" data-cat="racikan" data-aos="fade-up">
+        <article class="p-card"><div class="p-top" style="--c1:#496b43"><span class="p-tag">Racikan</span><svg><use href="#ic-pouch"/></svg></div>
+          <div class="p-body"><h3>Jamu Ginggang Varian Lain</h3><p>Tersedia beberapa racikan Ginggang lainnya. Tanyakan varian yang tersedia kepada kami.</p>
+            <div class="p-meta"><div class="price"><small>mulai dari</small>Rp15.000</div><a class="p-order" aria-label="Tanya varian Jamu Ginggang" target="_blank" rel="noopener" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20varian%20racikan%20apa%20saja%20yang%20tersedia%3F"><i class="bi bi-whatsapp"></i></a></div></div></article>
+      </div>
+      <!-- serbuk -->
+      <div class="col-sm-6 col-lg-4 p-item" data-cat="serbuk" data-aos="fade-up" data-aos-delay="80">
+        <article class="p-card"><div class="p-top" style="--c1:#a8610d"><span class="p-tag">Serbuk · P-IRT</span><svg><use href="#ic-jar"/></svg></div>
+          <div class="p-body"><h3>Kunir Asam</h3><p>Minuman serbuk kunyit dan asam. P-IRT 2103471011123-28.</p>
+            <div class="p-meta"><div class="price"><small>harga</small>Tanya WA</div><a class="p-order" aria-label="Pesan Kunir Asam" target="_blank" rel="noopener" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20saya%20ingin%20memesan%20Kunir%20Asam%20serbuk."><i class="bi bi-whatsapp"></i></a></div></div></article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-item" data-cat="serbuk" data-aos="fade-up" data-aos-delay="160">
+        <article class="p-card"><div class="p-top" style="--c1:#5b4636"><span class="p-tag">Serbuk · proses P-IRT</span><svg><use href="#ic-jar"/></svg></div>
+          <div class="p-body"><h3>Beras Kencur &amp; Beras Kencur Pedas</h3><p>Dua pilihan serbuk beras kencur, original dan pedas. Sedang dalam proses P-IRT.</p>
+            <div class="p-meta"><div class="price"><small>harga</small>Tanya WA</div><a class="p-order" aria-label="Pesan Beras Kencur serbuk" target="_blank" rel="noopener" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20saya%20ingin%20memesan%20Beras%20Kencur%20serbuk."><i class="bi bi-whatsapp"></i></a></div></div></article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-item" data-cat="serbuk" data-aos="fade-up">
+        <article class="p-card"><div class="p-top" style="--c1:#9b4f05"><span class="p-tag">Serbuk · proses P-IRT</span><svg><use href="#ic-jar"/></svg></div>
+          <div class="p-body"><h3>Temulawak</h3><p>Serbuk temulawak, rempah khas Jawa. Sedang dalam proses P-IRT.</p>
+            <div class="p-meta"><div class="price"><small>harga</small>Tanya WA</div><a class="p-order" aria-label="Pesan Temulawak serbuk" target="_blank" rel="noopener" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20saya%20ingin%20memesan%20Temulawak%20serbuk."><i class="bi bi-whatsapp"></i></a></div></div></article>
+      </div>
+    </div>
+    <p class="note"><i class="bi bi-info-circle"></i> Harga dan ketersediaan dapat berubah. Konfirmasi melalui WhatsApp sebelum memesan.</p>
+  </div>
+</section>
+
+<!-- ============ REMPAH ============ -->
+<section id="rempah" class="sec dark-sec">
+  <div class="container">
+    <div class="sec-head" data-aos="fade-up">
+      <span class="kicker">Bahan Alami</span>
+            <h2>Rempah Pilihan Nusantara</h2>
+      <p>Jamu lahir dari kekayaan rempah Jawa. Berikut bahan-bahan yang akrab dalam racikan jamu tradisional.</p>
+      <div class="orn"><i class="bi bi-diamond-fill"></i></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-4 col-lg" data-aos="fade-up"><div class="rempah-card"><div class="r-ico"><svg><use href="#sp-kunyit"/></svg></div><h3>Kunyit</h3><span class="jv">Kunir</span><p>Rimpang kuning keemasan, dasar kunir asam.</p></div></div>
+      <div class="col-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="80"><div class="rempah-card"><div class="r-ico"><svg><use href="#sp-temulawak"/></svg></div><h3>Temulawak</h3><span class="jv">Temulawak</span><p>Rimpang besar khas Jawa yang banyak dipakai dalam jamu.</p></div></div>
+      <div class="col-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="160"><div class="rempah-card"><div class="r-ico"><svg><use href="#sp-kencur"/></svg></div><h3>Kencur</h3><span class="jv">Cekur</span><p>Harum dan segar, kunci beras kencur.</p></div></div>
+      <div class="col-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="240"><div class="rempah-card"><div class="r-ico"><svg><use href="#sp-jahe"/></svg></div><h3>Jahe</h3><span class="jv">Jahe</span><p>Pedas hangat yang menjadi sahabat ramuan tradisional.</p></div></div>
+      <div class="col-12 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="320"><div class="rempah-card"><div class="r-ico"><svg><use href="#sp-asam"/></svg></div><h3>Asam Jawa</h3><span class="jv">Asem</span><p>Pemberi rasa asam segar yang menyeimbangkan.</p></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ GALERI & VIDEO ============ -->
+<section id="galeri" class="sec galeri">
+  <div class="container">
+    <div class="sec-head" data-aos="fade-up">
+      <span class="kicker">Galeri</span>
+      <h2>Menyusuri Rumah Jamu Ginggang</h2>
+      <p>Dari bangunan lawas di Jalan Masjid hingga proses meracik tradisional: bahan ditumbuk dengan lumpang dan alu, lalu direbus di tungku kayu bakar.</p>
+      <div class="orn"><i class="bi bi-diamond-fill"></i></div>
+    </div>
+    <div class="video-wrap" data-aos="zoom-in">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube-nocookie.com/embed/yfVX0s60xRk" title="Video Jamu Ginggang" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <a class="video-link" href="https://youtu.be/yfVX0s60xRk" target="_blank" rel="noopener"><i class="bi bi-youtube"></i> Tonton di YouTube</a>
+    </div>
+    <div class="slider" id="slider" data-aos="fade-up" aria-roledescription="carousel" aria-label="Galeri foto Jamu Ginggang">
+      <div class="s-track" id="sTrack">
+        <figure class="gal-item s-slide"><div class="ph"><i class="bi bi-shop"></i><span>Tampak depan toko</span></div><img src="assets/img/img1.jpeg" alt="Tampak depan toko Jamu Ginggang" loading="lazy" onerror="this.remove()"><figcaption>Tampak depan toko</figcaption></figure>
+        <figure class="gal-item s-slide"><div class="ph"><i class="bi bi-droplet-half"></i><span>Proses pembuatan jamu</span></div><img src="assets/img/img2.jpeg" alt="Proses pembuatan jamu Ginggang" loading="lazy" onerror="this.remove()"><figcaption>Proses pembuatan jamu</figcaption></figure>
+        <figure class="gal-item s-slide"><div class="ph"><i class="bi bi-box-seam"></i><span>Produk Jamu Ginggang</span></div><img src="assets/img/img4.jpg" alt="Produk Jamu Ginggang" loading="lazy" onerror="this.remove()"><figcaption>Produk Jamu Ginggang</figcaption></figure>
+        <figure class="gal-item s-slide"><div class="ph"><i class="bi bi-geo-alt"></i><span>Toko Jamu Ginggang, Pakualaman</span></div><img src="assets/img/img3.webp" alt="Toko Jamu Ginggang di Pakualaman" loading="lazy" onerror="this.remove()"><figcaption>Toko Jamu Ginggang, Pakualaman</figcaption></figure>
+      </div>
+      <button class="s-btn prev" id="sPrev" aria-label="Foto sebelumnya"><i class="bi bi-arrow-left"></i></button>
+      <button class="s-btn next" id="sNext" aria-label="Foto berikutnya"><i class="bi bi-arrow-right"></i></button>
+      <div class="s-dots" id="sDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PENGHARGAAN ============ -->
+<section id="penghargaan" class="sec dark-sec">
+  <div class="container">
+    <div class="sec-head" data-aos="fade-up">
+      <span class="kicker">Penghargaan &amp; Pengakuan</span>
+      <h2>Jejak Pengakuan untuk Warisan Jamu</h2>
+      <p>Pengakuan atas kiprah Jamu Ginggang menjaga budaya jamu tradisional Yogyakarta.</p>
+      <div class="orn"><i class="bi bi-diamond-fill"></i></div>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="award" data-aos="fade-up"><div class="a-year">2018</div><div><h3>Penganugerahan Budaya Kota Yogyakarta</h3><p>Kategori <b>Tokoh Penggiat Budaya Jamu Tradisional</b>, diberikan kepada Jamu Ginggang oleh Pemerintah Kota Yogyakarta bersama Dinas Kebudayaan.</p><a href="https://warta.jogjakota.go.id/detail/index/6405" target="_blank" rel="noopener">Sumber: Warta Pemkot Yogyakarta <i class="bi bi-box-arrow-up-right"></i></a></div></div>
+        <div class="award" data-aos="fade-up" data-aos-delay="80"><div class="a-year">2023</div><div><h3>Jamu Wellness Culture — UNESCO</h3><p>Pada 6 Desember 2023, UNESCO menetapkan <b>Budaya Sehat Jamu</b> sebagai Warisan Budaya Takbenda. Jamu Ginggang adalah bagian dari tradisi hidup yang diakui itu. Sertifikat inskripsi diserahkan kepada Indonesia pada 25 April 2024.</p><a href="https://www.cnnindonesia.com/nasional/20240507144800-25-1095032/2-warisan-budaya-ri-sumbu-filosofis-yogyakarta-jamu-diakui-unesco" target="_blank" rel="noopener">Sumber: CNN Indonesia <i class="bi bi-box-arrow-up-right"></i></a></div></div>
+        <div class="award" data-aos="fade-up" data-aos-delay="160"><div class="a-year"><i class="bi bi-bank2"></i></div><div><h3>Diusulkan sebagai Warisan Budaya</h3><p>Perwakilan UNESCO mengunjungi Jamu Ginggang dan mengusulkannya sebagai warisan budaya, menjelang usia satu abad pada 2025. Bangunan toko dan ornamennya juga diusulkan sebagai cagar budaya; prosesnya masih berjalan.</p><a href="https://www.detik.com/jogja/kuliner/d-6905981/jamu-ginggang-warisan-tabib-paku-alam-mendunia-diajukan-ke-unesco" target="_blank" rel="noopener">Sumber: detikJogja <i class="bi bi-box-arrow-up-right"></i></a></div></div>
+      </div>
+      <div class="col-lg-5" data-aos="fade-left">
+        <figure class="gal-item cert">
+          <div class="ph"><i class="bi bi-patch-check"></i><span>Sertifikat UNESCO</span></div>
+          <img src="assets/img/unesco.jpe" alt="Sertifikat UNESCO Jamu Wellness Culture" loading="lazy" onerror="this.remove()">
+          <figcaption>Sertifikat inskripsi UNESCO: Jamu Wellness Culture</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEGALITAS ============ -->
+<section class="sec legal" id="legalitas">
+  <div class="container">
+    <div class="sec-head" data-aos="fade-up">
+      <span class="kicker">Terdaftar &amp; Terpercaya</span>
+      <h2>Legalitas Usaha</h2>
+      <div class="orn"><i class="bi bi-diamond-fill"></i></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up"><div class="badge-card"><div class="ico"><i class="bi bi-building-check"></i></div><div><h3>NIB</h3><p><b>0901230055733</b></p></div></div></div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80"><div class="badge-card"><div class="ico"><i class="bi bi-patch-check"></i></div><div><h3>P-IRT Kunir Asam</h3><p><b>2103471011123-28</b></p></div></div></div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="160"><div class="badge-card"><div class="ico"><i class="bi bi-moon-stars"></i></div><div><h3>Sertifikat Halal</h3><p><b>ID34110001969840223</b></p></div></div></div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240"><div class="badge-card"><div class="ico"><i class="bi bi-hourglass-split"></i></div><div><h3>Proses P-IRT</h3><p>Beras kencur, beras kencur pedas &amp; temulawak</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STRUKTUR ORGANISASI ============ -->
+<section id="struktur" class="sec dark-sec">
+  <div class="container">
+    <div class="sec-head" data-aos="fade-up">
+      <span class="kicker">Struktur Organisasi</span>
+      <h2>Tangan-Tangan di Balik Racikan</h2>
+      <p>Dari meracik, melayani, hingga memastikan jamu sampai ke tangan Anda, setiap bagian bekerja menjaga warisan yang sama.</p>
+      <div class="orn"><i class="bi bi-diamond-fill"></i></div>
+    </div>
+    <div class="org">
+      <div class="org-top" data-aos="fade-up">
+        <div class="org-node main">
+          <div class="org-mono"><svg><use href="#mark"/></svg></div>
+          <span class="org-role">Pemilik &amp; Pengelola · Generasi V</span>
+          <h3>Rudi Supriyadi</h3>
+          <p>Memimpin usaha, menjaga resep warisan keluarga, dan memastikan mutu setiap racikan.</p>
+        </div>
+      </div>
+      <ul class="org-branch">
+        <li data-aos="fade-up"><div class="org-node"><i class="bi bi-droplet-half"></i><span class="org-role">Divisi</span><h3>Racik &amp; Produksi</h3><p>Menumbuk dengan lumpang dan alu, merebus di tungku kayu bakar, serta meracik jamu sesuai resep.</p></div></li>
+        <li data-aos="fade-up" data-aos-delay="80"><div class="org-node"><i class="bi bi-cup-hot"></i><span class="org-role">Divisi</span><h3>Pelayanan Toko</h3><p>Melayani pengunjung, menyajikan sekitar 45 menu, dan membuat ramuan khusus sesuai keluhan.</p></div></li>
+        <li data-aos="fade-up" data-aos-delay="160"><div class="org-node"><i class="bi bi-whatsapp"></i><span class="org-role">Divisi</span><h3>Pemesanan &amp; Pemasaran</h3><p>Mengelola pesanan WhatsApp, penjualan online, dan pengiriman produk serbuk.</p></div></li>
+        <li data-aos="fade-up" data-aos-delay="240"><div class="org-node"><i class="bi bi-patch-check"></i><span class="org-role">Divisi</span><h3>Administrasi &amp; Legalitas</h3><p>Mengurus NIB, P-IRT, dan sertifikasi halal, serta pembukuan usaha.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KUNJUNGI ============ -->
+<section id="kunjungi" class="sec kunjungi">
+  <div class="container">
+    <div class="row g-5 align-items-stretch">
+      <div class="col-lg-5" data-aos="fade-right">
+        <span class="kicker" style="color:var(--emas-2);font-weight:800;letter-spacing:.26em;font-size:.76rem;text-transform:uppercase">Kunjungi Kami</span>
+        <h2 style="font-size:clamp(2rem,4vw,3rem);font-weight:800;margin:.5rem 0 0">Mampir ke Pakualaman</h2>
+        <p class="mt-3" style="color:rgba(248,240,223,.8)">Rasakan langsung suasana rumah jamu yang telah menetap di Jalan Masjid sejak 1950.</p>
+        <ul class="kontak-list">
+          <li><div class="ico"><i class="bi bi-geo-alt-fill"></i></div><div><b>Alamat</b>Jl. Masjid PA No. 32, RT 34 RW 09, Gunung Ketur, Pakualaman, Yogyakarta 55111</div></li>
+          <li><div class="ico"><i class="bi bi-person-heart"></i></div><div><b>Pemilik</b>Rudi Supriyadi</div></li>
+          <li><div class="ico"><i class="bi bi-clock"></i></div><div><b>Jam Buka</b>Setiap hari, 08.00–20.00 WIB</div></li>
+          <li><div class="ico"><i class="bi bi-whatsapp"></i></div><div><b>WhatsApp</b><a href="https://wa.me/6285786880438" target="_blank" rel="noopener">0857-8688-0438</a></div></li>
+        </ul>
+        <div class="d-flex flex-wrap gap-3">
+          <a class="btn-jg btn-emas" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Chat WhatsApp</a>
+          <a class="btn-jg btn-garis" href="https://www.google.com/maps/search/?api=1&query=Jamu+Ginggang+Jl.+Masjid+PA+No.32+Pakualaman+Yogyakarta" target="_blank" rel="noopener"><i class="bi bi-map"></i> Buka Peta</a>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="map-wrap">
+          <iframe title="Lokasi Jamu Ginggang" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Jl.+Masjid+PA+No.32+Gunung+Ketur+Pakualaman+Yogyakarta&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-lg-8"><div class="jawa" style="font-size:1.5rem" aria-hidden="true">ꦗꦩꦸꦒꦶꦁꦒꦁ</div><h2>Rasakan racikan yang telah dipercaya sejak 1925.</h2></div>
+      <div class="col-lg-4 text-lg-end"><a class="btn-jg btn-daun" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20saya%20ingin%20memesan%20jamu." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Pesan Sekarang</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <div class="brand"><svg class="brand-mark"><use href="#mark"/></svg><span class="brand-text">Jamu Ginggang<small>Pakualaman · Yogyakarta</small></span></div>
+        <p>Jamu tradisional legendaris dari Pakualaman, Yogyakarta. Resep leluhur tabib Sri Paduka Pakualam VII, dijaga lima generasi.</p>
+      </div>
+      <div class="col-6 col-lg-3 offset-lg-1">
+        <h4>Jelajahi</h4>
+        <ul><li><a href="#filosofi">Filosofi</a></li><li><a href="#sejarah">Sejarah</a></li><li><a href="#produk">Produk</a></li><li><a href="#galeri">Galeri</a></li><li><a href="#penghargaan">Penghargaan</a></li><li><a href="#struktur">Struktur Organisasi</a></li><li><a href="#kunjungi">Kunjungi</a></li></ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Kontak</h4>
+        <ul><li>Jl. Masjid PA No. 32, Pakualaman</li><li><a href="https://wa.me/6285786880438" target="_blank" rel="noopener">WhatsApp 0857-8688-0438</a></li></ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="year">2026</span> Jamu Ginggang. Hak cipta dilindungi.</span>
+      <span>Sumber: Jamupedia, Kompas.com, detikJogja, CNN Indonesia &amp; Pemkot Yogyakarta.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6285786880438?text=Halo%20Jamu%20Ginggang%2C%20saya%20ingin%20memesan%20jamu." target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
